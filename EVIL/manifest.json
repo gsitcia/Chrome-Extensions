@@ -1,11 +1,16 @@
 {
     "name": "Launch App",
     "version": "1.0",
-    "description": "An evil extension that uses eval",
+    "description": "An extension that launches an app",
     "permissions": ["storage","management"],
     "browser_action": {
         "default_popup": "popup.html",
         "default_title": "Launch app"
+    },
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false,
+        "chrome_style": true
     },
     "manifest_version": 2
 }
